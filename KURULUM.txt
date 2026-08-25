@@ -1,0 +1,24 @@
+Kurulum: KURULUM.txt içindeki ayazakcay599@gmail.com alanını kendi e-postanla değiştir ve Firestore Rules dosyasını Publish et.
+
+Yönetim paneli:
+1) index.html ve firebase-config.js dosyalarını kullan.
+2) index.html içindeki ADMIN_EMAIL = "ayazakcay599@gmail.com" alanına yönetici Google e-postanı yaz.
+3) firestore.rules içindeki 'ayazakcay599@gmail.com' değerini aynı e-posta ile değiştir.
+4) Firebase Console > Firestore > Rules bölümüne bu rules dosyasını yapıştırıp Publish et.
+5) Firebase Console > Authentication > Sign-in method > Google etkin olmalı.
+6) Siteyi localhost/Live Server veya Firebase Hosting üzerinden aç.
+
+Not: Bakım, tema/logo ve kullanıcı engelleme ayarları adminConfig ve blockedUsers koleksiyonlarında tutulur.
+
+8) Yönetici hesabı: ayazakcay599@gmail.com. Başka Google hesapları yönetim paneline giremez.
+
+
+9) Oyun Kod Editörü:
+- Yönetim panelindeki "🧑‍💻 Oyun Kod Editörü" bölümünden JavaScript oyun kodunu değiştirebilirsin.
+- "Kodu Test Et" yalnızca mevcut sayfada test eder.
+- "Kodu Kaydet ve Yayınla" kodu Firestore > gameCode/main belgesine yazar ve gameCodeVersions altında sürüm geçmişi oluşturur.
+- Oyuncular giriş yaptıktan sonra yayınlanan son kod otomatik çalıştırılır.
+- Kod sürüm geçmişinden eski bir sürüm editöre getirilebilir; tekrar "Kodu Kaydet ve Yayınla" ile yayınlanır.
+- Kod 900.000 karakterden kısa olmalıdır.
+- Yayınlanan kod oyuncuların tarayıcısında çalıştığı için şifre, API anahtarı veya başka gizli bilgi koyma.
+- Firestore Rules dosyasındaki gameCode ve gameCodeVersions kurallarını da Publish et.
