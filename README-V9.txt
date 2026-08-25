@@ -1,1 +1,0 @@
-V9 özellikleri: Google giriş, bakım modu, yönetim paneli, logo/tema, kullanıcı engelleme, takım güçleri ve HTML + JavaScript oyun kodu yayınlama. HTML ve JS Firebase gameCode/main içinde saklanır; oyuncular yayınlanan HTML yi sandbox iframe içinde çalıştırır.
